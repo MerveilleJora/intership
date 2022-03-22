@@ -1,6 +1,10 @@
-/* Css pour le risponsive : https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+/**
+ *  Css pour le responsive :
+ *  Liens ver le site 
+ *  https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+ */
 
-.container{
+.responsive{ 
     width: 100%;
     margin-right: auto;
     margin-left: auto;
@@ -10,9 +14,10 @@
     display: flex;
 }
 
-/* Propriété du contenant */
+/* ==================================================================== Properties for the Parent
+(flex container) */
 
-/* Alignement des boites */
+/* ============== Alignement des boites */
 
 .flex-row{
     flex-direction: row;
@@ -29,7 +34,7 @@
     flex-direction: column-reverse;
 }
 
-/* retourr à la ligne des div  */
+/* ============== Retourr à la ligne des div  */
 .felx-warp{
     flex-wrap: wrap;
 }
@@ -58,30 +63,71 @@
 .js-space-evenly{
     justify-content: space-evenly;
 }
-/* Alignement en fonctions de la largeur de la page */
+
+/* ============== Alignement des items VERTICAL */
+.al-it-start{
+    align-items: flex-start;
+}
+.al-it-end{
+    align-items: flex-end;
+}
+.al-it-center{
+    align-items: center;
+}
+.al-it-stretch{
+    align-items: stretch;
+}
+.al-it-baseline{
+    align-items: baseline;
+}
+
+/* ============== Alignement des items dans la boite */
+.al-ct-start{
+    align-content: flex-start;
+}
+.al-ct-end{
+    align-content: flex-end;
+}
+.al-ct-center{
+    align-content: center;
+}
+.al-ct-stretch{
+    align-content: stretch;
+}
+.al-ct-space-between{
+    align-content: space-between;
+}
+.al-ct-space-arround{
+    align-content: space-around;
+}
+
+/* ==================================================================== Properties for the Children (flex items) */
+
+
+/* ================================== Alignement en fonctions de la largeur de la page */
 
 @media (min-width: 576px) {
-  .container {
+  .responsive {
     max-width: 540px;
   }
 }
 @media (min-width: 768px) {
-  .container {
+  .responsive {
     max-width: 720px;
   }
 }
 @media (min-width: 992px) {
-  .container {
+  .responsive {
     max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
-  .container {
+  .responsive {
     max-width: 1140px;
   }
 }
 @media (min-width: 1400px) {
-  .container {
+  .responsive {
     max-width: 1320px;
   }
 }

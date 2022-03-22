@@ -4,7 +4,7 @@ require '../Model/OfferAd.php';
 require '../Model/Company.php';
 require '../Model/OfferClass.php';
 
-class ManagerOffer
+class ManagerOffer extends Manager
 {
     private Offer $off;
     private OfferAd $off_ad;
@@ -13,6 +13,8 @@ class ManagerOffer
 
     public function addOffer($post, $skill, $duration, $remu, $nb_place, $company, $tb_ad, $tb_class)
     {
+        $this->getBdd();
+        
         // TB Offer
         $off = new Offer();
         $off->setPost($post);
@@ -27,7 +29,8 @@ class ManagerOffer
         $id_cmp = $cmp->selectIdCmp($company);
         $off->setId_cmp($id_cmp);
 
-        $id_offer = $off->createOffer();
+        $values = ['post' => "'".$off->getPost()."'", 'skill' => "'".$off->getSkill()."'", 'duration' => $off->getDuration(), 'date' => $off->getDate(), 'remu' => $off->getRemu(), 'nb_place' => $off->getNb_place(), 'id_cmp' => $off->getId_cmp()];
+        $id_offer = $this->addValueTable('Offer', $values);
 
         // TB Offer_Ad
         $off_ad = new OfferAd();
@@ -37,7 +40,8 @@ class ManagerOffer
             $off_ad->setCity($city);
             $id_ad = $off_ad->selectIdAdd();
             $off_ad->setId_ad($id_ad);
-            $off_ad->createOfferAd();
+            $values = ['id_offer' => $off_ad->getId_offer(), 'id_ad' => $off_ad->getId_ad()];
+            $this->addValueTable('Offer_Ad', $values);
         }
 
         // TB Offer_Class
@@ -46,7 +50,8 @@ class ManagerOffer
         foreach ($tb_class as $class)
         {
             $off_class->setClass($class);
-            $off_class->createOfferClass();
+            $values = ['id_offer' => $off_class->getId_offer(), 'class' => "'".$off_class->getClass()."'"];
+            $this->addValueTable('offer_class', $values);
         }
     }
 
@@ -55,17 +60,9 @@ class ManagerOffer
         // TB Offer
         $off = new Offer();
         $off->setId_offer($id_offer);
-        $off->deleteOffer();
-
-        // TB Offer_Class
-        $off_class = new OfferClass();
-        $off_class->setId_offer($id_offer);
-        $off_class->deleteOfferClass();
-
-        // TB Offer_Ad
-        $off_ad = new OfferAd();
-        $off_ad->setId_offer($id_offer);
-        $off_ad->deleteOfferAd();
+        $this->getBdd();
+        $IdValues = ['$id_offer' => $off->getId_offer()];
+        return $this->deleteFromTable('Offer', $IdValues);
     }
 }
 

@@ -1,5 +1,5 @@
 <?php
-require "header.php";
+require "../headers/header_admin.php";
 ?>
 <div class="Cadre_form Cadre_Offer Center">
         <form action="" method="POST">

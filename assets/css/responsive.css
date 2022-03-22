@@ -1,0 +1,87 @@
+/* Css pour le risponsive : https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+.container{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.display-flex{
+    display: flex;
+}
+
+/* Propriété du contenant */
+
+/* Alignement des boites */
+
+.flex-row{
+    flex-direction: row;
+}
+.flex-row-reverse{
+    flex-direction: row-reverse;
+}
+
+.flex-column{
+    flex-direction: column;
+} 
+
+.flex-column-reverse{
+    flex-direction: column-reverse;
+}
+
+/* retourr à la ligne des div  */
+.felx-warp{
+    flex-wrap: wrap;
+}
+.felx-warp-reverse{
+    flex-wrap: wrap-reverse;
+}
+
+/* Alignement des element dans le div */
+
+.jc-start{
+    justify-content: start;
+}
+.js-end{
+    justify-content: end;
+}
+
+.js-center{
+    justify-content: center;
+}
+.js-space-between{
+    justify-content: space-between;
+}
+.js-space-around{
+    justify-content: space-around;
+}
+.js-space-evenly{
+    justify-content: space-evenly;
+}
+/* Alignement en fonctions de la largeur de la page */
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}

@@ -39,7 +39,7 @@
             <br />
             <!-- Espace Mot de passe -->
             <div class="lable">Mot de passe</div>
-            <input type="password" name="pass" /><br />
+            <input type="password" name="pass" value="<?php echo $pass ?>"/><br />
             <!-- Boutton valider -->
             <br />
             <input type="submit" name="valider" value="S'authentifier" />

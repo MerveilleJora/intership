@@ -1,0 +1,104 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+main {
+    position: relative;
+    top: 0;
+    bottom: 5rem;
+}
+
+#containLogo {
+    width: max-content;
+    margin-top: 3%;
+    margin: auto
+}
+
+#Logo {
+    width: 10rem;
+    margin: auto;
+    border-radius: 100%;
+}
+
+#connexion {
+    position: relative;
+    top: 2rem;
+    bottom: 5rem;
+    width: 24%;
+    margin: auto;
+    height: 20rem;
+    background: #9187B0;
+    border-radius: 15px;
+    padding: 2rem;
+    color: white;
+}
+
+#containconnexion {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.nptconnex {
+    border-radius: 5px;
+    border: 0px;
+    padding: 4px;
+    margin: 4px;
+    width: 80%;
+}
+
+
+#selection {
+    height: 1.5rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+#statut {
+    background-color: bisque;
+     border: 0;
+    border-radius: 5px;
+}
+
+#login {
+    width: 5rem;
+    margin: auto;
+    text-align: center;
+}
+
+.bouton {
+    border-radius: 5px;
+    border: 0px;
+    text-align: center;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.writer {
+    cursor: text;
+}
+
+.foot {
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+}
+
+#imgF {
+    left: 20%;
+}
+
+#imgH {
+    right: 20%;
+}
+
+#Legacymentions {
+    height: 2rem;
+    width: 24%;
+    left: 38%;
+}

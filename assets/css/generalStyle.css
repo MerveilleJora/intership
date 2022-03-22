@@ -1,0 +1,166 @@
+/*==================police, taille de block et temps de transition pour tout le monde */
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: .5s;
+}
+/*border violet de tous les inputs*/
+.borderproperties {
+    border-style: solid;
+    border-color: #8C6896;
+    border-width: 2px;
+}
+
+/*les différents backgrounds utilisés*/
+.whitesmokeBG {
+    background-color: whitesmoke;
+}
+
+.violetBG {
+    background-color: #8C6896;
+}
+
+.bisqueBG {
+    background-color: bisque;
+}
+
+.pinkBG {
+    background-color: #FFF1F1;
+}
+/*comportement du curseur*/
+.pointer {
+    cursor: pointer;
+}
+
+.text {
+    cursor: text;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/*taille et couleur d'ombre*/
+.ombre {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*à utiliser pour centrer après avoir mis un width*/
+.Center {
+    margin: auto;
+}
+/*enlever la marge par défaut du body*/
+.bodymargin {
+    margin: 0;
+}
+
+/*les inputs*/
+.Ipt
+{
+    height: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+.Ipt_Skill
+{
+    
+    border-radius: 10px;
+}
+
+.LBL
+{ font-size: large; }
+
+/*les filtres*/
+.filter {
+    position:relative;
+    z-index:0;
+    top: 0;
+    width: 10%;
+    height: 30rem;
+    background-color: #9DADC9;
+    padding-top: 10%;
+    text-align: center;
+}
+
+.Cadre_Offer
+{
+    margin-top: 5%;
+    width: 30%;
+}
+
+/*===================================================================== HEADER */
+header
+{
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head_titre
+{ text-shadow: 2px 2px 4px black; }
+
+.head_logo
+{
+    width: 25%;
+    padding: 3%;
+    margin-left: 10%;
+}
+
+.head_profil
+{
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    justify-content: flex-end;
+}
+
+.head_profil .NP
+{
+    text-align: right;
+    padding: 2%;
+    text-shadow: 2px 2px 4px black;
+}
+/*===================================================================== FOOTER */
+footer
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height:20%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.footer_logo
+{width: 30%;}
+
+.footer_link
+{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#footer_div_logo
+{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 2%;
+}
+
+#footer_titre
+{
+    text-align: left;
+    color: whitesmoke;
+    text-decoration : underline;
+}

@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: .5s;
+}
+
+/*Les items de la barre et l'input search*/
+.listitems {
+  width: 50%;
+  list-style: none;
+  padding-top: 0;
+}
+.search {
+  width: 30%;
+}
+/*class flex-end*/
+.navitems {
+  display: flex;
+  justify-content:end;
+}
+/*div search*/
+.Iptsearch
+{
+  text-align: center;
+}
+
+.logosearch {
+    margin: .4rem;
+    height: 80%;
+}
+
+.logosearch:hover {
+    height: 85%;
+    margin: .1rem;
+}
+/* div items*/
+.menuItems {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin: 1rem 2rem;
+}
+
+.menuItem:hover {
+  text-decoration: underline;
+}
+
+.menu-under
+{
+    display: none;
+    position: absolute;
+    z-index: 200;
+    width: 5rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    list-style: none;
+    
+}
+
+a{
+    text-decoration: none;
+    color:black
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+.showmenu_under {
+  display:initial;
+}
+
+
+
+/*burger bar*/
+.bar 
+{
+  top: 2rem;
+  right: 2rem;
+  z-index: 100;
+  width: 3rem; 
+  height: max-content; 
+}
+
+  .bar:hover {
+      width: 4rem;
+  }
+
+.burger {
+  width: 80%;
+  height: .3rem;
+  margin: 10% 1rem;
+  background-color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1rem #8C6896;
+  
+}
+ 
+.closeIcon {
+  display: none;
+}
+
+.menu {
+  width: 100%;
+  position: absolute;
+  transform: translateY(-150%);
+  /* à utiliser pour la version mobile
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  */
+  z-index: 1;
+  color: black;
+  list-style: none;
+  padding-top: .5rem;
+  justify-content: space-evenly;
+  font-size: small;
+  height: 4.5rem;
+  display: flex;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+

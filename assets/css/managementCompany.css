@@ -1,0 +1,98 @@
+
+/*===================================================================== RIGHT Deleguate*/
+.btn_validate
+{
+    color: white;
+    padding: 1rem;
+    margin-left: 45%;
+    margin-bottom: 2%;
+    font-size: large;
+    border-radius: 10px;
+}
+
+.Deleguate_Cadre
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5%;
+    padding: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.Cadre_form
+{
+    background: linear-gradient(0deg, rgba(227, 154, 154, 0.2), rgba(227, 154, 154, 0.2)), #FFF1F1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 2%;
+    padding: 1%;
+    width: 20rem;
+}
+
+.Deleguate_LBL
+{ font-size: large; }
+
+/*===================================================*/
+.div_left_right
+{
+    display: flex;
+    justify-content: space-between;
+    width: 5rem;
+}
+
+.barre
+{
+    background: rgba(140, 104, 150, 1);
+    width: 100%;
+}
+
+.sec
+{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-top: 4rem;
+}
+
+.petit_cadre
+{
+    position: relative;
+    margin-top: 1rem;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.gros_cadre
+{
+    width:50%;
+    height: 28rem;
+}
+
+#Deleguate {
+    width: max-content;
+}
+
+main {
+    display: flex;
+    margin: 0 auto 10rem;
+    width:100%;
+    height: max-content;
+}
+
+.btns{
+display: flex;
+justify-content: space-between;
+}
+
+.details{
+    width:100%;
+    height: 3rem;
+}
+
+#texteval {
+    width: 100%;
+    height: 5rem;
+}
